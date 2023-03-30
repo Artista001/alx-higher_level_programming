@@ -7,6 +7,6 @@ class Square:
    """Represents our square"""
 
    def __init__(self, size):
-       """Private instance attribute: size
+      """Private instance attribute: size
           Instantination with size(no type/value verification)"""
-       self.__size = size
+      self.__size = size
