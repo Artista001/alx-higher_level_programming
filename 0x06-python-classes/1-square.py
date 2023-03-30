@@ -1,12 +1,14 @@
 #!/usr/bin/python3
 # Authored by Samwuel simiyu
-"""We define our square"""
+"""Defines the square """
 
 
 class Square:
-   """Represents our square"""
+    """Represents the square"""
 
-   def __init__(self, size):
-      """Private instance attribute: size
-          Instantination with size(no type/value verification)"""
-      self.__size = size
+    def __init__(self, size):
+        """Private Instance attribute: size
+         Instatntination with size (on type/value verification)   
+        """
+
+        self.__size = size
