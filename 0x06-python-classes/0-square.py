@@ -4,3 +4,4 @@
 class Square:
     """We pass it since it does nothing"""
     pass
+
