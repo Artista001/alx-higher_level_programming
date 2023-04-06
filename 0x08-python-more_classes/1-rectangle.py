@@ -1,46 +1,35 @@
 #!/usr/bin/python3
-"""A class defining a rectangle"""
+"""A class that defines a rectangle"""
 
 
 class Rectangle:
-    """this represents the rectangle"""
+   """this represents a rectangle"""
 
-    def __init__(self, width=0, height=0):
-        """Initializing this rectangle class
-        Args:
-            width: represents the width of the rectangle
-            height: represents the height of the rectangle
-        Raises:
-            TypeError: if size is not integer
-            ValueError: if size is less than zero
-        """
-        self.width = width
-        self.height = height
+   def __init__(self, width=0, height=0):
+       """Initializing the rectangle class
+       Args:
+           width: Represents the width of the rectangle
+           height: Represents the height of the rectangle
+       Raises:
+             TypeError: if size is not an integer
+             ValueError: if size is less than zero
+       """
 
-    @property
-    def width(self):
-        """retrieves the width attribute"""
-        return self.__width
+       self.width = width
+       self.height = height
 
-    @width.setter
-    def width(self, value):
-        """sets the width attribute"""
-        if not isinstance(value, int):
-            raise TypeError("width must be an integer")
-        if value < 0:
-            raise ValueError("width must be >= 0")
-        self.__width = value
 
-    @property
-    def height(self):
-        """retrieves the height attribute"""
-        return self.__height
+   @property
+   def width(self):
+       """retrieves the width attribute"""
+       return self.__width
 
-    @height.setter
-    def height(self, value):
-        """sets the height attribute"""
-        if not isinstance(value, int):
-            raise TypeError("height must be an integer")
-        if value < 0:
-            raise ValueError("height must be >= 0")
-        self.__height = value
+
+   @width.setter
+   def width(self, value):
+       """sets the width attribute"""
+       if not isinstance(value, int):
+           raise TypeError("Width must be an integer")
+       if value < 0:
+           raise ValueError("Width must be >= 0")
+       sels.__width = value
